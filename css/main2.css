@@ -1,0 +1,543 @@
+ /*
+ Theme Name: minisite v1.0
+ author      : Jungeun NAM
+ date        : January 2015
+ description : A clean and simple custom CSS design for minisite
+ */
+
+/*
+ #faf9f5 - white beige for background
+ #929ba5 - gray
+ #3db2c5 - blue
+ #9bb70c - green
+ #9c73a0 - purple
+*/
+
+/* fonts types */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,300);
+
+
+/* General */
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, form, fieldset, input, textarea, blockquote {
+     margin:0;
+     padding:0;
+}
+
+html {
+    background-color:#faf9f5;
+    
+}
+body {
+
+	color: #7e7f81;
+    font-family:'Roboto', 'sans-serif', 'verdana', 'arial';
+    font-weight: 300;
+    min-width: 900px;    
+}
+#navimage {
+   position:relative; 
+   /*box-shadow: 0px 0px 3px 2px #363636;
+    -moz-box-shadow: 0px 0px 3px 2px #363636;
+    -webkit-box-shadow: 0px 0px 3px 2px #363636;*/
+}
+
+
+/* navigation */
+
+#navigation {
+    clear: both;
+    width:100%;
+    min-width: 900px;
+    margin:auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:45px;
+    background-color:#fff;
+    /*opacity: 0.8;*/
+    font-family:'Raleway', 'verdana', 'arial','sans-serif';
+    font-size: 0.9em;
+    z-index: 1;
+     box-shadow: 0px 0px 3px 2px #888686;
+    -moz-box-shadow: 0px 0px 3px 2px #888686;;
+    -webkit-box-shadow: 0px 0px 3px 2px #888686;;
+  
+}
+
+/* hide any uls within a ul */
+#navigation ul ul {
+    display:none;
+}
+
+
+/* make the submenu appear for the child of ul of the li being hovered */
+#navigation ul li:hover > ul {
+	display:block;
+	z-index:400;
+}   
+#navigation ul {
+    list-style:none;
+    position:relative;
+}    
+#navigation ul:after {
+    content: "";
+    clear:both; 
+    display:block;
+}
+#navigation ul li {
+    float:right;
+}
+
+/* make change font size for li a being hovered */
+#navigation ul li:hover a {
+    color:#fff;
+    font-weight: bold;
+    background:#faf9f5;
+    box-shadow: 0px 3px 3px 0px #464545;
+    -moz-box-shadow: 0px 3px 3px 0px #464545;
+    -webkit-box-shadow: 0px 3px 3px 0px #464545;
+    font-size: 110%;
+    padding-bottom: 14px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s ;
+}
+
+#navigation ul li a {
+    display:block; 
+    padding:12px 25px ;
+    color:#000; 
+}
+#navigation ul li a:link {
+    color:#faf9f5;
+    text-decoration:none;
+}
+#navigation ul ul {
+    border-radius:5px; 
+    padding:0;
+    position:absolute; 
+    top:100%;
+}
+#navigation ul ul li {
+    float:none; 
+    border-top:1px solid #faf9f5 ;
+    position:relative;
+}
+#navigation ul ul li a {
+    padding:10px 50px;
+    color:#fff !important;
+    background-color:#000 !important;
+}   
+#navigation ul ul li a:hover {
+    background:#000 !important; 
+    color: #fff!important;
+    font-weight: bold;
+    z-index:100;
+}      
+
+#navigation ul ul ul {
+    position:absolute; 
+    left:100%; 
+    top:0;
+}
+
+#navigation .active {
+    background-color: #000;
+    color: #fff;
+    font-size: 125%;    
+}
+#navigation .active1 {
+    background-color: #000
+    color: #fff;
+    font-size: 125%;    
+}
+
+#navcartimg{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+  
+.cartsum{
+    line-height: 27px;
+    float: right;
+    font-family: 'roboto','verdana', 'arial';
+    font-size: 0.8em;
+    
+}
+.active1 #navcartimg {
+    z-index: -1;
+}
+.active1{
+    background-image: url(../images/shopping_cart2.png);
+    background-repeat: no-repeat;
+    background-size: 20px 21px;
+    background-position: 24px 12px;
+    height: 21px;
+}
+
+/* index  page */
+
+#container {
+    clear: both;
+    margin: 0 auto;
+    width: 70%;
+    min-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    border-color: #d1d1cf;
+    border-style: double;
+    border-width: 3px 0 0 0;
+   /* background-color: #fff;
+    box-shadow: 3px 3px 5px 0 #e2e0e0;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;*/
+
+}
+#container p {
+     line-height: 25px;
+     font-weight: lighter;
+    
+}
+#logo {
+    clear: both;
+	width: 260px;
+	height: auto;
+	display: block;
+	padding: 30px  0 30px 0; 
+    margin: 0 auto 30px auto;
+}
+
+img {
+	display: block;
+	vertical-align: middle;
+	text-align: center;	
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+h1, h2 {
+	color: #9c73a0;
+    font-family:'Raleway', 'verdana', 'arial','sans-serif';
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+
+/* login form */
+
+
+label {
+    clear: both;
+	float: left;
+    width: 100px;
+	display: block;	
+}
+
+.box {
+    margin-bottom: 13px;
+    height: 20px;
+}
+
+
+
+/*#content1 */
+
+span {
+    color: #ba0910;
+    font-size: 0.9em;
+}
+
+.submit, .addcart, .shopping{
+    clear: both;
+    float: left;
+	color: #8edbea;
+    font-size: 1.2em;
+	background-color: #faf9f5;
+    width: 250px;
+    height: 50px;
+	/*padding: 8px 20px;*/
+	margin: 30px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: solid 1px #8edbea;
+}
+
+.submit:hover, .addcart:hover, .shopping:hover {
+    background-color: #8edbea;
+    color: #fff;
+}
+
+/* registration page */
+
+.error {
+    clear:both;
+    font-size: 0.9em;
+    color: #9c73a0;
+}
+
+.regi {
+    clear: both;
+    float: left;
+}
+
+
+/* searchform */
+
+#searchbox {
+    padding: 10px 20px 0 10px;
+      
+}
+#searchform {
+    float: right;
+    color: #000;
+    font-weight: bold;
+    }
+
+.searchinput {
+    width: 130px;
+    height: 23PX;
+    background-color: #fff;
+    background-size: 15px 15px;
+    background-position: right;  
+    color: #e2e2e2;
+    float: left;
+    border: 1px solid #000;
+    padding-left: 4px;
+}
+
+.searchinput:focus {
+    outline: none; /* delete outline of input box with Chrome*/
+    border: 1px solid #7fedfc;
+}
+.searchsubmit:focus {
+    outline:none;  /* delete outline of submit button with Chrome*/
+}
+.searchsubmit {
+    width: 23px;
+    height: 23px;
+    float: left;
+    background: url(../images/search.png) no-repeat ;
+    background-size: 15px 15px;
+    margin:0;
+    padding: 0;
+    margin-left: -23px;
+    margin-top: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#searchform, input {
+     margin: 0;
+ }
+
+.searchresult a, .blogtitle a {
+    color: #61bebc;
+    font-size: 1.2em;
+   
+}
+.searchresult a:hover, .blogtitle a:hover {
+    font-size: 125%;
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s ;
+}
+
+/* session pages*/
+
+.logincheck {
+  
+    float: right;
+    padding: 5px 0 5px 0;
+    color:  #9c73a0 ;
+    font-size:0.9em;
+    font-style: italic;
+    
+}
+
+
+h3 {
+    color: #5a5959;
+	margin: 10px 0;
+}
+.title{
+	
+    font-size: 1.1em;
+  
+}
+
+.session1imag {
+    clear: both;
+    float: right;
+    max-width: 45%;
+    height: auto;
+    margin: 30px 0 30px 30px;
+}
+
+
+/* shop & shopping cart */
+
+#shippingcoment{
+    color: #70d1e3;
+}
+.cartbutton{
+
+	color: #ffffff;
+    font-size: 0.8em;
+	background-color: #8edbea;
+	padding: 3px 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-style: none;
+}
+.cartbutton:hover {
+     background-color: #3dd2e6;
+}
+.removelink a{
+    color: #9c73a0;
+}
+#productarea{
+    position: relative;
+    width: 270px;
+    height: 600px;
+    display: block;
+    float: left;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.productimage{
+    width: 225px;
+    height: 189px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+.productdiscription{
+    
+    clear: both;
+    display: inline-block;
+    width: 225px;
+    height: 270px;   
+}
+
+#productbutton{
+    clear: both;
+    display: inline-block;
+}
+
+/* blog */
+
+#blogcontent {
+    float: left;
+    width: 75%;
+}
+.bloglink  {
+    color: #9c73a0;
+    text-decoration: none;
+}
+.posttime {
+    font-size: 0.9em;
+}
+
+/* sidebar for blog */
+
+#blogsidebar{
+    float: right;
+    width: 16%;
+    border-left: 3px double #d1d1cf;
+   /*  box-shadow: 0px 3px 2px 0px #939392;
+    -moz-box-shadow: 0px 3px 2px 0px #939392;
+    -webkit-box-shadow: 0px 3px 2px 0px #939392;
+    display: inline-block;
+    background-color:  #f4f4f4;*/
+    padding: 0 0 20px 25px;
+    margin: 30px 0 0 0;
+}
+
+.commentarea {
+    background-color: #e8f5f4;
+    padding: 20px 10px ;
+    margin-bottom: 15px;
+}
+.commentcontent{
+    font-size: 16px;
+}
+
+    
+
+
+/* footer */
+
+
+#copy {
+    width: 70%;
+    min-width: 900px;
+	clear: both;
+	font-size: 0.7em;
+	margin: 50px auto;
+    border-color: #d1d1cf;
+    border-style: double;
+    border-width: 3px 0 0 0;
+    padding-top: 20px;
+    
+}
+#copyright{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+#copy p {
+	display: block;
+	float: left;
+    margin-right: 30px;
+	padding-top: 10px;
+
+}
+#copy span {
+    float: left;
+}
+#copy .rollover img {
+	width: 25px;
+	height: auto;
+	margin-left: 15px;
+}
+.rollover .over {
+	display: none;
+}
+
+.rollover:hover img {
+ 	display: none;
+ }
+
+.rollover:hover .over {
+	display: inline;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s ;
+	height: auto;
+}
+
+#payment{
+    clear: both;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.paymenticon{  
+    display: block;
+    float: left;
+    width: 64px;
+    height: auto;
+    margin-left: 10px;
+}
+
