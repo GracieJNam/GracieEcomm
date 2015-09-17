@@ -7,12 +7,12 @@
 ?>
 
 
-   </div><!-- col-md-12 end-->
+   </div><!-- col-sm-12 end-->
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-<div class="col-md-1"></div>
-<div class="content col-md-10"><!-- col-md-10 start-->
+<div class="col-sm-1 col-xs-1"></div>
+<div class="content col-sm-10 col-xs-10"><!-- col-md-10 start-->
  
 <?php
      //if the $_REQUEST 'command' is 'delete' then call the PHP remove_product function
@@ -138,7 +138,7 @@ it in your external CSS file -->
          </div> <!-- end cart -->
      </form>
 
-   </div><!--col-md-10 end-->
+   </div><!--col-sm-10 end-->
        
 <?php
  include '../includes/footer.php';
