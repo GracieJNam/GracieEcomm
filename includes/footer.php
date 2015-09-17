@@ -1,8 +1,8 @@
     
-    <div class="col-md-1"></div><!--col-md-1 end-->
+    <div class="col-sm-1 col-xs-1"></div><!--col-md-1 end-->
     </div><!-- second row end-->
 <div class="row">
-<div class="col-md-12" id="copy">
+<div class="col-sm-12 col-xs-12" id="copy">
     
 <footer>
        <div id="copyright">
@@ -46,7 +46,7 @@
                 
         </div>-->
     </footer>
-    </div><!--col-md-12 end-->
+    </div><!--col-sm-12 end-->
 </div>
         
         
@@ -64,7 +64,7 @@
          });
      });
     </script>
-    </div><!-- col-md-12-->
+    </div><!-- col-sm-12-->
 </div><!-- second row end-->
 </div><!-- container fluid end-->
 </body>
