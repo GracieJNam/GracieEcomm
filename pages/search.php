@@ -11,14 +11,14 @@
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-    <div class="col-md-1"></div>
-        <div class="content col-md-10"><!-- col-md-10 start-->
+    <div class="col-sm-1 col-xs-1"></div>
+        <div class="content col-sm-10 colo-xs-10"><!-- col-md-10 start-->
 <?php
          include '../includes/logincheck.php';
 ?>
 <h1>Search results</h1><br />
 
-<div class='col-md-9'><!--col-md-9 start-->  
+<div class='col-sm-9 col-sx-12'><!--col-md-9 start-->  
 
 <?php
 
@@ -82,14 +82,15 @@
      mysqli_close($con); // close the database connection
 ?>
 
-</div> <!--col-md-9 end-->
+</div> <!--col-sm-9 end-->
 
 <?php
 
     include '../includes/sidebar.php';
 ?>
 
-</div><!--col-md-10 end-->  
+</div><!--col-sm-10 end-->  
+
 
 
 <?php
