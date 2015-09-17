@@ -4,18 +4,18 @@
  include '../includes/header.php';//includes connect.php 
  include '../includes/nav.php';
 ?>
-</div><!-- col-md-12 end-->
+</div><!-- col-sm-12 end-->
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-    <div class="col-md-1"></div>
-        <div class="content col-md-10"><!-- col-md-10 start-->
+    <div class="col-sm-1 col-xs-1"></div>
+        <div class="content col-sm-10 col-xs-10"><!-- col-md-10 start-->
 
 
     <h1>Contact Us</h1><br />
     
 <article id="contactfield">
-<div class="col-md-6">
+<div class="col-sm-6 col-xs-12">
    <fieldset>
        <legend><h3> &nbsp;Leave your massage&nbsp; </h3></legend>
 <?php
@@ -53,7 +53,7 @@
         </form>
    </fieldset>
 </div>
-<div class="col-md-6">
+<div class="col-sm-6 col-xs-12">
     <br /><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.9556934206603!2d153.0240067!3d-27.470638699999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a04f3d8c507%3A0x5bddf624fd03742e!2s35+Queen+St%2C+Travelex%2C+Brisbane+QLD+4000!5e0!3m2!1sen!2sau!4v1432007297107" width="100%" height="450" frameborder="0" style="border:0"></iframe><br /><br />
     <p>35 Queen Street, Spring Hill, Queensland, 4000</p>
     <p>Phone:(07) 1234 5678</p>
@@ -63,7 +63,7 @@
                             
 </article>
 </div>
-<div class="col-md-1"></div>
+<div class="col-sm-1 col-xs-1"></div>
 </div><!--col-md-10 end-->  
    
 <?php
