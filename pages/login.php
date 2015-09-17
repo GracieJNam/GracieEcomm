@@ -5,17 +5,17 @@
  include '../includes/nav.php';
 
 ?>
-        </div><!-- col-md-12 end-->
+        </div><!-- col-sm-12 end-->
     </div><!-- row end-->
     
 <div class="row"><!-- second row start-->
- <div class="col-md-1"></div><!-- col-md-1 end-->
-     <div class="content col-md-10"><!-- main content start-->
-     <div class="col-md-2"></div>
-     <div class="col-md-8">
+ <div class="col-sm-1 col-xs-1"></div><!-- col-md-1 end-->
+     <div class="content col-sm-10 col-xs-10"><!-- main content start-->
+     <div class="col-sm-2"></div>
+     <div class="col-sm-8 col-xs-12">
 
 <div id="login">
-    <h2>Welcome to The Kirk Estate Soap &amp; Body</h2>
+    <h1>Welcome to The Kirk Estate Soap &amp; Body</h1>
     <br />
     <br />
     <br />
@@ -59,8 +59,8 @@
 
         </div>
      </div>
-<div class="col-md-2"></div>
-</div><!-- col-md-10 end-->
+<div class="col-sm-2"></div>
+</div><!-- col-sm-10 end-->
 <?php
 	
     include '../includes/footer.php';
