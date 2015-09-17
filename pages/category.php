@@ -6,19 +6,19 @@
      include '../includes/functions.php'; //includes all the required PHP functions
 ?>
 
-    </div><!--col-md-12 end-->
+    </div><!--col-sm-12 end-->
 </div><!--first row finish -->
 
 <div class="row"><!--second row start -->
-    <div class="col-md-1"></div>
-        <div class="content col-md-10"><!-- col-md-10 start-->
+    <div class="col-sm-1 col-xs-1"></div>
+        <div class="content col-sm-10 col-xs-10"><!-- col-sm-10 start-->
         
 <?php
      include '../includes/logincheck.php';
 ?>
 
         <h1>Category</h1><br />
-<div class="col-md-9">
+<div class="col-sm-9 col-xs-12">
 <?php
 
 //if the $_REQUEST 'command' is 'add' than call the PHP addtocart function
@@ -63,7 +63,7 @@
 
      while ($row = mysqli_fetch_array($result)) //display the results
      {
-         echo "<div class='productarea col-sm-6 col-md-3'><div class='thumbnail'><a href = 'productdetail.php?productId=" . $row['productId'] . "'><img class='productimage' src='../images/shop/" . ($row['productImage']) . "'/></a>"; 
+         echo "<div class='productarea col-xs-6 col-sm-3'><div class='thumbnail'><a href = 'productdetail.php?productId=" . $row['productId'] . "'><img class='productimage' src='../images/shop/" . ($row['productImage']) . "'/></a>"; 
          //display the image stored inside the images subfolder in another subfolder named shop (in your database store the image name e.g., image.jpg in the image column of your product table)
 
          echo "<div class='caption'><a href = 'productdetail.php?productId=" . $row['productId'] . "'><h4>" . $row['productName'] . "</h4></a><br />";
@@ -84,7 +84,7 @@
 ?> 
   
  
- </div><!--col-md-10 end-->
+ </div><!--col-sm-10 end-->
     
 
 <?php
