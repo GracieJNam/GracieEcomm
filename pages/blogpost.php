@@ -12,15 +12,15 @@
      
 ?>
 
- </div><!-- col-md-12 end-->
+ </div><!-- col-sm-12 end-->
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-    <div class="col-md-1"></div>
-        <div class="content col-md-10"><!-- col-md-10 start-->
+    <div class="col-sm-1 col-xs-1"></div>
+        <div class="content col-sm-10 col-xs-10"><!-- col-md-10 start-->
 
     <h1>The Blog Post</h1><br />
-   <div class="col-md-9"><!--col-md-9 start-->
+   <div class="col-sm-9 col-xs-12"><!--col-md-9 start-->
 
 <?php
      $sql = "SELECT * FROM blog, admin, category WHERE blog.authorId = admin.adminId &&
@@ -41,14 +41,14 @@
      
      
  
-</div> <!--col-md-9 end-->
+</div> <!--col-sm-9 end-->
 
 <?php
 
     include '../includes/sidebar.php';
 ?>
 
-</div><!--col-md-10 end-->  
+</div><!--col-sm-10 end-->  
 <?php
  include'../includes/footer.php';
 ?>

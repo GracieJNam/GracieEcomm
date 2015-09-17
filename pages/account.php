@@ -14,15 +14,15 @@
      $row = mysqli_fetch_array($result);
 ?>
 
-</div><!-- col-md-12 end-->
+</div><!-- col-sm-12 end-->
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-<div class="col-md-1"></div>
-<div class="col-md-10">
+<div class="col-sm-1 col-xs-1"></div>
+<div class="col-sm-10 col-xs-10">
 
 
-<div class="content col-md-6"><!-- col-md-6 start-->
+<div class="content col-sm-6 col-xs-12"><!-- col-md-6 start-->
   
 <?php
      //user messages
@@ -63,8 +63,8 @@
          <p><input class="submit" type="submit" name="accountupdate" value="Update Account" /></p>
      </form>
 
-    </div><!--col-md-6 end-->
-    <div class="content col-md-6"><!-- col-md-6 start-->
+    </div><!--col-sm-6 end-->
+    <div class="content col-sm-6 col-xs-12"><!-- col-md-6 start-->
  <h1>Update Password</h1>
      
      <p>Passwords must have a minimum of <strong>8</strong> characters.</p><br />
@@ -85,8 +85,8 @@
         confirm('Are you sure you wish to permanently delete your account?');" ></p> 
         <input type="hidden" name="userId" value="<?php echo $userId; ?>">
      </form>
-</div><!--col-md-6 end-->
-</div><!--col-md-10 end-->
+</div><!--col-sm-6 end-->
+</div><!--col-sm-10 end-->
     
 
 <?php
