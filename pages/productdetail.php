@@ -14,12 +14,12 @@
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-    <div class="col-md-1"></div>
-        <div class="content col-md-10"><!-- col-md-10 start-->
+    <div class="col-sm-1 col-xs-1"></div>
+        <div class="content col-sm-10 col-xs-10"><!-- col-md-10 start-->
     
     <h1>The Shop</h1>
     <br />
-<div class="col-md-9"><!--col-md-9 start-->
+<div class="col-sm-9"><!--col-md-9 start-->
     <?php
 
          //if the $_REQUEST 'command' is 'add' than call the PHP addtocart function
@@ -59,10 +59,10 @@
 
          while ($row = mysqli_fetch_array($result)) //display the results
          {
-             echo "<div class='col-md-6'><div id='productarea' <p><img class='productimage' src='../images/shop/" . ($row['productImage']) . "'/></p></div></div>"; 
+             echo "<div class='col-sm-6 col-xs-12'><div id='productarea' <p><img class='productimage' src='../images/shop/" . ($row['productImage']) . "'/></p></div></div>"; 
              //display the image stored inside the images subfolder in another subfolder named shop (in your database store the image name e.g., image.jpg in the image column of your product table)
              
-             echo "<div class='col-md-6'productdiscription'><h3>" . $row['productName'] . "</h3>" . " </strong> in <strong>" . $row['category'] . "</strong></em><br /><br />";
+             echo "<div class='col-sm-6 col-xs-12 productdiscription'><h3>" . $row['productName'] . "</h3>" . " </strong> in <strong>" . $row['category'] . "</strong></em><br /><br />";
          }
       /* star rating */
          $sql = "SELECT productId, ROUND(AVG(rating)) as rating FROM comment WHERE productId=" . $_GET['productId'];  
@@ -164,14 +164,14 @@
     ?>
     
     
-<br /></div> <!--col-md-9 end-->
+<br /></div> <!--col-sm-9 end-->
 
 <?php
 
     include '../includes/sidebar.php';
 ?>
 
-</div><!--col-md-10 end-->  
+</div><!--col-sm-10 end-->  
  
  
 <?php
