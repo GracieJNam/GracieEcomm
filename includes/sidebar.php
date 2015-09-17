@@ -3,7 +3,7 @@
     include "../includes/connect.php";
 
 ?>
-<div class="sidebarbody col-md-3"><!-- sidebar content area -->
+<div class="sidebarbody col-sm-3 col-xs-12"><!-- sidebar content area -->
 <div class="side panel panel-default">
      <div class="panel-body">
         <?php include '../includes/searchform.php';?>
