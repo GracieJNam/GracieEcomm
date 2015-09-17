@@ -24,7 +24,7 @@
          header("location:contactus.php"); //redirect to index.php
          exit();
      }
-     $cc = "carboncopy@example.com"; //email to include as a carbon copy
+     $cc = "cogito_@naver.com"; //email to include as a carbon copy
      $recipients = $to . ", " . $cc; //to use Cc or Bcc with SMTP you must list theemail addresses as both recipients and headers
      $subject = "Confirmation email";
      $message = "<html style='font-family:arial,sans-serif; font-size:14px;lineheight:25px;'><body>";
