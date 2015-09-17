@@ -7,17 +7,17 @@
 ?>
 
 
-</div><!-- col-md-12 end-->
+</div><!-- col-sm-12 end-->
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-    <div class="col-md-1"></div>
-        <div class="content col-md-10"><!-- col-md-10 start-->
+    <div class="col-sm-1 col-xs-1"></div>
+        <div class="content col-sm-10 col-xs-10"><!-- col-sm-10 start-->
             
 <h1>The Shop</h1>
     <br />
 
-<div class="col-md-9"><!--col-md-9 start-->
+<div class="col-sm-9 col-xs-12"><!--col-sm-9 start-->
     <?php
      $sql = "SELECT * FROM product";
      $result = mysqli_query($con, $sql) or die(mysqli_error($con)); //run the query
@@ -89,7 +89,7 @@
 
      while ($row = mysqli_fetch_array($result)) //display the results
      {
-         echo "<div class='productarea col-sm-6 col-md-3'><div class='thumbnail'><a href = 'productdetail.php?productId=" . $row['productId'] . "'><img class='productimage' src='../images/shop/" . ($row['productImage']) . "'/></a>"; 
+         echo "<div class='productarea col-xs-6 col-sm-3'><div class='thumbnail'><a href = 'productdetail.php?productId=" . $row['productId'] . "'><img class='productimage' src='../images/shop/" . ($row['productImage']) . "'/></a>"; 
          //display the image stored inside the images subfolder in another subfolder named shop (in your database store the image name e.g., image.jpg in the image column of your product table)
 
          echo "<div class='caption'><a href = 'productdetail.php?productId=" . $row['productId'] . "'><h4>" . $row['productName'] . "</h4></a><br />";
@@ -138,14 +138,14 @@
      echo "</div><br />"; // end pagination
  ?>
 
-</div> <!--col-md-9 end-->
+</div> <!--col-sm-9 end-->
 
 <?php
 
     include '../includes/sidebar.php';
 ?>
 
-</div><!--col-md-10 end-->  
+</div><!--col-sm-10 end-->  
 
 <?php
  include '../includes/footer.php';
