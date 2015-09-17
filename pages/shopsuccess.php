@@ -6,12 +6,12 @@
      include '../includes/nav.php';
 ?>
 
-  </div><!-- col-md-12 end-->
+  </div><!-- col-sm-12 end-->
 </div><!-- row end-->
 
 <div class="row"><!--second row start -->
-<div class="col-md-1"></div>
-<div class="content col-md-10"><!-- col-md-10 start-->
+<div class="col-sm-1 col-xs-1"></div>
+<div class="content content col-sm-10 col-xs-10"><!-- col-md-10 start-->
 
 <?php
      if(isset($_REQUEST['command']) && $_REQUEST['command']==''){ //if the $_REQUEST variable has a value of 'nothing' do the following
@@ -85,7 +85,7 @@
   
 
      
-</div><!--col-md-10 end--> 
+</div><!--col-sm-10 end--> 
  
 <?php
     include '../includes/footer.php';
