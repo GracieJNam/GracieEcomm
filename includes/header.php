@@ -34,6 +34,7 @@ platforms -->
          <!-- TinyMCE editor -->
         <script type="text/javascript" src="../js/tinymce/tinymce.min.js"></script>
         <script type="text/javascript">
+             alert(" This website is Jungeun's portfolio. ");
 
              tinymce.init({
                  theme:"modern",

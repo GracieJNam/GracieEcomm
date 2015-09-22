@@ -118,6 +118,10 @@
 
     </div><!--col-md-10 end-->
     
+    <script type="text/javascript">
+        alert(" This website is Jungeun's portfolio website. ");
+    </script>
+    
 
 <?php
     include '../includes/footer.php';
